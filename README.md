@@ -424,6 +424,8 @@ The `standing` routine makes use of the clauses defined as `stnd` to detect the 
 * Agent and wumpus are in same location - failure. (redundant since we already quit the game in `standing`)
 * Other cases - continue by calling `take_steps`.
 
+During `ask_KB` if a new `agent_location` cannot be solved, the game also ends with `false`.
+
 ## Comments
 
 This implementation of the wumpus world differs from the class in the following ways
